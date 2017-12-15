@@ -103,11 +103,7 @@
                                     <script>console.log("{{i.mate_id}}")</script>
                                     <a href="{{url_for('main.match_profile', uid=i.mate_id)}}" class="btn btn-primary" >View Profile</a>
                                 </div>
-                                     <div>
-            <form method="post" action="{{url_for('api.acceptDate', match_id=i.match.id, accept=True)}}">
-            <button type="submit">Test Button</button>
-            </form>
-        </div>
+              
                                 </div></li>
                     {% endfor %}
                 </div>
