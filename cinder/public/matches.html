@@ -206,7 +206,8 @@
 
                 //close the modal
                 requestModal.style.display = "none";
-                congratsModal.style.display = "block";
+                if(response)
+                    congratsModal.style.display = "block";
             }
 
             closeRequest.onclick = function(){
